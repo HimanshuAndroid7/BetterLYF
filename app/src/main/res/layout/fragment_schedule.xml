@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_session_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Session Type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_session_types"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_session_type" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_session_minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_session_types"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Session Minutes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_twenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_session_minutes"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="20 Minutes"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_forty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_session_minutes"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/txt_twenty"
+                android:padding="@dimen/_10sdp"
+                android:text="40 Minutes"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_sixty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_session_minutes"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/txt_forty"
+                android:background="@drawable/rectangle_background_guest"
+                android:padding="@dimen/_10sdp"
+                android:text="60 Minutes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_counsellor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_twenty"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Counselor"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_counsellor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_counsellor" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_counsellor"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Select Your Date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <devs.mulham.horizontalcalendar.HorizontalCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_calendar"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/white"
+                app:textColorSelected="@color/yellow" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_slot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calendarView"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Select Slot"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_slots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_slot" />
+
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_slots"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/rectangle_background_circle"
+                android:paddingLeft="@dimen/_40sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_40sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="Book Session"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

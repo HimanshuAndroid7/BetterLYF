@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/layout_mains"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_165sdp"
+                android:scaleType="fitXY"
+                android:alpha="0.7"
+                android:src="@drawable/banner_next" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_emotional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:gravity="center"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="Counselling Can Help You"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_emotional"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rectangle_background_circle"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="START"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/light"
+                android:layout_below="@+id/img_banner"/>
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_story"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/img_banner"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Even The Most Successful, Struggle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+            
+            <ImageView
+                android:id="@+id/img_story"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170sdp"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/txt_story"
+                android:layout_margin="@dimen/_20sdp"
+                android:src="@drawable/story_amit" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_story_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/black"
+                android:layout_alignLeft="@id/img_story"
+                android:layout_alignTop="@id/img_story"
+                android:layout_alignRight="@id/img_story"
+                android:layout_alignBottom="@id/img_story"
+                android:layout_below="@+id/img_banner"
+                android:alpha="0.7"
+                android:layout_marginTop="@dimen/_140sdp"
+                android:text="Amit Tandon On Stress &amp; Peer Pressure"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_start_journey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_story_heading"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rectangle_background_yellow_circle"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_17sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_17sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="Start Your Journey "
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_helps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_story_heading"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rectangle_background_pink_circle"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="How Counselling Helps"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/light"
+                android:layout_below="@+id/txt_helps"
+                android:layout_marginTop="@dimen/_20sdp"/>
+
+
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_counsellor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_helps"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="Connect to Counsellor"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_viewAll_counsellor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_helps"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:text="View All"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_counsellor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_counsellor"
+                android:layout_margin="@dimen/_10sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/light"
+                android:layout_below="@+id/rv_counsellor"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_client_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_counsellor"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="Client Reviews"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_viewAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_counsellor"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:text="View All"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_client_review"
+                android:layout_margin="@dimen/_10sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/light"
+                android:layout_below="@+id/rv_reviews"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_books"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_reviews"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="Self Improvement"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_viewAll_self"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_reviews"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:text="View All"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_books"
+                android:id="@+id/layout_book"
+                android:layout_margin="@dimen/_10sdp">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_self_help_new"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_170sdp"
+                    android:src="@drawable/broken_book"
+                    android:visibility="gone"
+                    android:id="@+id/img_book"/>
+
+                <com.betterlyf.app.helper.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_book"
+                    android:id="@+id/txt_book"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/txt_short_book"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="@dimen/_10sdp"/>
+
+                <com.betterlyf.app.helper.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txt_read_more"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_book"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/rectangle_background_circle"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:text="Read More"
+                    android:layout_toRightOf="@+id/img_book"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/light"
+                android:layout_below="@+id/layout_book"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_articles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_book"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="Articles"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_articles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_articles"
+                android:layout_margin="@dimen/_10sdp" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_viewAll_article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_book"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:text="View All"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

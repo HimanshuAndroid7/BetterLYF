@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SubscriptionActivity">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/left"
+        android:visibility="visible" />
+
+    <com.betterlyf.app.helper.CustomTextView
+        android:id="@+id/txt_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="Subscription"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_mail"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_below="@+id/txt_heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:src="@drawable/mail_new" />
+
+    <com.betterlyf.app.helper.CustomTextView
+        android:id="@+id/txt_subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_mail"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:text="Get Your Daily Scoop of Happiness!"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp" />
+
+    <LinearLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/txt_subscribe"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/password">
+
+        <ImageView
+            android:id="@+id/layout_email"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/mail" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inp_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            app:layout_constraintTop_toBottomOf="@+id/email">
+
+            <com.betterlyf.app.helper.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:background="@color/lightGrey" />
+
+    <com.betterlyf.app.helper.CustomTextView
+        android:id="@+id/txt_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/email"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle_background_circle"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp" />
+
+
+
+</RelativeLayout>

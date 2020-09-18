@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.DashboardActivity">
+
+    <com.betterlyf.app.helper.CustomTextView
+        android:id="@+id/txt_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light"
+        android:gravity="center"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:text="Dashboard"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp" />
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:padding="@dimen/_12sdp"
+        android:src="@drawable/left" />
+
+
+    <com.betterlyf.app.helper.CircularTextView
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_below="@id/txt_heading"
+        android:text="Schedule"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/_20sdp"
+        android:textSize="@dimen/_14sdp"
+        android:id="@+id/txt_appointments"/>
+
+    <com.betterlyf.app.helper.CircularTextView
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_below="@id/txt_heading"
+        android:text="Sessions"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:padding="@dimen/_10sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:textSize="@dimen/_14sdp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/txt_sessions"/>
+
+    <com.betterlyf.app.helper.CircularTextView
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_below="@id/txt_appointments"
+        android:text="Counsellors"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:padding="@dimen/_10sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:textSize="@dimen/_14sdp"
+        android:id="@+id/txt_counsellor"/>
+
+    <com.betterlyf.app.helper.CircularTextView
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_below="@id/txt_sessions"
+        android:text=" Progress "
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:padding="@dimen/_10sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:textSize="@dimen/_14sdp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/txt_progress"/>
+
+    <com.betterlyf.app.helper.CircularTextView
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_below="@id/txt_progress"
+        android:text=" Payments "
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:padding="@dimen/_10sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:textSize="@dimen/_14sdp"
+        android:id="@+id/txt_payments"/>
+
+
+</RelativeLayout>

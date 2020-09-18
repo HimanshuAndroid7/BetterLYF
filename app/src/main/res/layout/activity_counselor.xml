@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.CounselorActivity">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/left"
+        android:visibility="visible" />
+
+    <com.betterlyf.app.helper.CustomTextView
+        android:id="@+id/txt_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="Know Your Counselor"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_heading"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_counselor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/counselor" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_counselor"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Nandita"
+                android:textColor="@color/signup_color"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Masters in Applied Psychology"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <RelativeLayout
+                android:id="@+id/layout_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_comment"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <com.betterlyf.app.helper.CustomTextView
+                    android:id="@+id/txt_english"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/rectangle_border_black_round"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="English" />
+
+                <com.betterlyf.app.helper.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txt_english"
+                    android:background="@drawable/rectangle_border_black_round"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="Hindi" />
+
+            </RelativeLayout>
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_clients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_language"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="8552 Happy Clients"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/_11sdp" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_clients"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Online"
+                android:textColor="@color/indicator_color"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_online"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Call / Chat / Video"
+                android:textColor="@color/lightGrey"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_call"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/rectangle_background_pink_circle"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="Schedule Now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.betterlyf.app.helper.CustomTextView
+                android:id="@+id/txt_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_book"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:lineSpacingExtra="@dimen/_1sdp"
+                android:text="You'll find Nandita's sessions quite lively where she puts her confrontations subtly and wonderfully. Bring her any concern and she'll crack through it! Nothing seems tough for this one, as she puts her clients at ease and is able to develop a quick rapport." />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

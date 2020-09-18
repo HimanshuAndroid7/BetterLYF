@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_20sdp">
+
+    <com.betterlyf.app.helper.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:text="@string/txt_ques"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/txt_question"/>
+
+    <com.betterlyf.app.helper.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txt_question"
+        android:id="@+id/txt_answer"
+        android:lineSpacingExtra="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_12sdp"
+        android:text="@string/txt_ans" />
+
+    <View
+        android:layout_width="@dimen/_3sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@color/color_faq"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

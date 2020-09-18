@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "711482026054",
+    "firebase_url": "https://betterlyf-4d6a1.firebaseio.com",
+    "project_id": "betterlyf-4d6a1",
+    "storage_bucket": "betterlyf-4d6a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711482026054:android:0661aaf3aaf3e172ab4247",
+        "android_client_info": {
+          "package_name": "com.betterlyf.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711482026054-a1j9o07gpv0bl61vqc9pdkab6fjds00m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZrHfxW_GXQXdFhJw2vTPuSTIKIr1uRvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711482026054-a1j9o07gpv0bl61vqc9pdkab6fjds00m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

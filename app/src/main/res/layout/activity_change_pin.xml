@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:numpad="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/previous"
+    tools:context=".ui.activity.ChangePinActivity">
+
+
+    <com.betterlyf.app.helper.CustomTextView
+        android:id="@+id/txt_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/_60sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:text="Enter your Pin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp" />
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/left"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/layout_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_below="@+id/txt_heading"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:nextFocusForward="@+id/edt2"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <EditText
+            android:id="@+id/edt2"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:maxLength="1"
+            android:nextFocusForward="@+id/edt3"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <EditText
+            android:id="@+id/edt3"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:nextFocusForward="@+id/edt4"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <EditText
+            android:id="@+id/edt4"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:nextFocusForward="@+id/edt5"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+
+    <com.fxn769.Numpad
+        android:id="@+id/txt_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_otp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_marginBottom="@dimen/_80sdp"
+        numpad:numpad_background_resource="@drawable/number_pressed"
+        numpad:numpad_grid_background_color="@color/indicator_color"
+        numpad:numpad_grid_line_thickness="2dp"
+        numpad:numpad_grid_visible="true"
+        numpad:numpad_image_resource="@drawable/ic_backspace"
+        numpad:numpad_text_color="@color/white"
+        numpad:numpad_text_limit="10"
+        numpad:numpad_text_size="@dimen/_10sdp"/>
+
+
+</RelativeLayout>

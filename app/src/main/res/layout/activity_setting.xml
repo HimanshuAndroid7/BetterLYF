@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SettingActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/close"
+        android:id="@+id/img_back"
+        android:padding="@dimen/_12sdp"/>
+
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/account"
+        android:id="@+id/img_account"
+        android:layout_below="@+id/img_back"
+        android:padding="@dimen/_10sdp"/>
+
+    <com.betterlyf.app.helper.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Account"
+        android:id="@+id/txt_account"
+        android:textSize="@dimen/_12sdp"
+        android:layout_below="@+id/img_back"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/card"
+        android:id="@+id/img_subscribe"
+        android:layout_below="@+id/txt_account"
+        android:padding="@dimen/_10sdp"/>
+
+    <com.betterlyf.app.helper.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subscription"
+        android:id="@+id/txt_subscription"
+        android:textSize="@dimen/_12sdp"
+        android:layout_below="@+id/txt_account"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/password_new"
+        android:id="@+id/img_password"
+        android:layout_below="@+id/txt_subscription"
+        android:padding="@dimen/_10sdp"/>
+
+    <com.betterlyf.app.helper.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:id="@+id/txt_change_password"
+        android:textSize="@dimen/_12sdp"
+        android:layout_below="@+id/txt_subscription"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/light_grey"
+        android:layout_below="@+id/txt_change_password"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <com.betterlyf.app.helper.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:layout_below="@+id/txt_change_password"
+        android:textSize="@dimen/_12sdp"
+        android:id="@+id/txt_policy"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp"/>
+
+    <com.betterlyf.app.helper.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refund Policy"
+        android:id="@+id/txt_refund_policy"
+        android:textSize="@dimen/_12sdp"
+        android:layout_below="@+id/txt_policy"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <com.betterlyf.app.helper.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terms &amp; Conditions"
+        android:layout_below="@+id/txt_refund_policy"
+        android:textSize="@dimen/_12sdp"
+        android:id="@+id/txt_terms"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/light_grey"
+        android:layout_below="@+id/txt_terms"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/logout"
+        android:id="@+id/img_logout"
+        android:layout_below="@+id/txt_terms"
+        android:padding="@dimen/_10sdp"/>
+
+    <com.betterlyf.app.helper.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/txt_logout"
+        android:textSize="@dimen/_12sdp"
+        android:layout_below="@+id/txt_terms"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_40sdp"/>
+
+
+</RelativeLayout>

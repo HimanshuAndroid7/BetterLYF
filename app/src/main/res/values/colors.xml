@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0a64f6</color>
+    <color name="colorPrimaryDark">#0a64f6</color>
+    <color name="previous">#8974e2</color>
+    <color name="colorAccent">#80827f</color>
+    <color name="guest_color">#c341b2</color>
+    <color name="color_faq">#950065</color>
+    <color name="signup_color">#e4439d</color>
+    <color name="yellow">#f1ad42</color>
+    <color name="privacy_color">#4b60b3</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="indicator_color">#3191CC</color>
+    <color name="grey">#646464</color>
+    <color name="light">#f0f0f0</color>
+    <color name="textColor">#333333</color>
+    <color name="light_grey">#6B6B6B</color>
+    <color name="barColor">#000000</color>
+    <color name="color_selected_tab">#cccccc</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorLightBlack">#212121</color>
+    <color name="color_black_light">#424242</color>
+    <color name="color_green">#2e7d32</color>
+    <color name="colorLight">#E0E0E0</color>
+    <color name="color_red">#e53935</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="fbBack">#3b5998</color>
+    <color name="lightGrey">#cccccc</color>
+    <color name="hint_color">#80827f</color>
+    <color name="back_blur">#6F000000</color>
+</resources>

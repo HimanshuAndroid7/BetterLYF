@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">BetterLYF</string>
+    <string name="facebook_app_id">2349579508692260</string>
+    <string name="fb_login_protocol_scheme">fb2349579508692260</string>
+    <string name="network_error">Please Try Later</string>
+    <string name="signup">Don\'t have an account? Sign Up Here</string>
+    <string name="guest">You Can Start Without Sign In.</string>
+    <string name="signin">Already have an account? Sign In</string>
+    <string name="privacy">By signing up, you agree to our Terms &amp; Conditions and Privacy Policy</string>
+    <string name="topic"> \u2022 Assessment\n\u2022 Dilemmas of Future\n\u2022 From where we stand\n\u2022 Honest Talk Hour\n\u2022 Self- Check</string>
+
+
+    <string name="article">According to researches most of the things we worry about are not as bad as we picture them in our heads and most of the worries do not come true. We catastrophise the situation and build up worst case scenarios to such an extent that it leads to overwhelming mental distress. Research shows that many of our imagined calamities never materialize. Precisely 85% of what the research subjects worried about never happened, and with the 15 percent that did happen, 79 percent of subjects discovered either they could handle the difficulty better than expected, or the difficulty taught them a lesson worth learning,
+
+\n\nHere are some top ways and strategies to Overcome Anxiety –
+Cognitive Distortions – Identifying our irrational/faulty thinking patterns helps us to take the first step in dealing with the anxiety as we have a tendency to focus on the negatives by maximizing them, and minimizing all the positives in our lives.
+
+\n\nProgressive Muscle Relaxation- Since anxiety leads to physiological effects as well, progressive muscule relaxation helps to stabilize those effects that we experience.
+
+\n\nWe can start with the palms by clenching them and simultaneously inhaling for 4 seconds, holding our breath then as we unclench our palms we exhale for 8 seconds. Then we can move to our arms, shoulders, neck and so on. This method entails systematically tensing particular muscle groups in our body. Next, we release the tension and notice how our muscles feel when they are relaxed. This exercise helps us to lower our overall tension and stress levels, enabling us to relax when we are feeling anxious. Click on stressed or anxious to learn more.
+
+\n\nDeep Breathing- Deep breathing exercises helps us to calm down our racing thoughts and feel centered rather than feel overwhelmed with the chaos of rushing thoughts.</string>
+
+    <string name="describe">\u2022 Discuss your concerns in detail \n\u2022 Develop insights \n\u2022 Include 5 Sessions </string>
+
+    <string name="txt_book">"She had become so cold overnight, I couldn't believe she wasn't coming back this time. I didn't know what to do, what to say to make things okay anymore. If only I could say the right things maybe Preeti would have stayed."\n\n
+        "I have since the break up started to think who I really am? I miss my previous self. The one that knew she is independent, strong, mature and knew the difference between right and wrong. I have turned out to be an embarrassment to myself."</string>
+
+    <string name="txt_short_book">"She had become so cold overnight, I couldn't believe she wasn't coming back this time. I didn't know what to do, what to say to make things okay anymore. If only I could say the right things maybe Preeti would have stayed."</string>
+
+
+    <string name="txt_desctiption_book">Published by: Betterlyf\n
+Format: Kindle Edition\n
+Language: English\n
+ASIN: B086Z3PY2S\n
+Buy the Book: Amazon</string>
+
+    <string name="tutorial">Sign In if you have an account\n
+Else, Sign Up\n
+Or\n
+You can start as a Guest\n
+With A Valid Email ID Here</string>
+    <string name="error_player">Error initializing</string>
+
+    <string name="txt_points">Meditation and Deep breathing /calming exercises taught, Lifestyle changes implementation as suggested ( related to eating, sleeping, work or fitness)</string>
+
+    <string name="txt_story">Deepika Padukone shares her experience with depression and anxiety while being at the peak of her career. She talks about signs of depression that were overwhelming and how she managed to overcome it.</string>
+
+    <string name="txt_change">Note: You can only generate the request to change your counselor.</string>
+    <string name="txt_ques">What is counseling/therapy?</string>
+    <string name="txt_ans">Counselling allows a person to talk about their thoughts, feelings and emotions without being judged or stigmatized. The counselor is trained to help you identify and understand your thoughts and emotions and in the process make you feel better.</string>
+</resources>
